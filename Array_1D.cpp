@@ -7,7 +7,7 @@ int main()
 
     do {
         if (error) // ** if it first time for loop. error comment do nothing **
-            cout << "Sorry, we have rang 1-10.";
+            cout << "Sorry, we have rang 1-10.\n";
 
         cout << "Enter cout of number : ";
         cin >> rang;
@@ -30,6 +30,7 @@ int main()
     }
     avg = sum / rang;
 
+    cout << "\nCout of number is "<< rang << endl;
     cout << "Max is "<< max << endl;
     cout << "Min is "<< min << endl;
     cout << "Sum is "<< sum << endl;
@@ -37,9 +38,9 @@ int main()
 
     do {
         if (error)
-            cout << "Out of rang, Please try again."; // ****
+            cout << "\nOut of rang, Please try again."; // ****
 
-        cout << "Search number by array's index : "; // teacher mean index or number of data ?
+        cout << "\nSearch number by array's index : "; // teacher mean index or number of data ?
         cin >> search;
         
         error = !(search < rang && search > 0); // cheak if input number but this number out of data we have.
